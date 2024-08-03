@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Kode+Mono:wght@400..700&family=Maven+Pro&family=Poiret+One&family=Poppins:wght@100;400&family=Sacramento&family=Titillium+Web&family=Zeyada&display=swap');
+
+@font-face {
+    font-family: PP mori;
+    src: url(./ppmori.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PP mori;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+#nav{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index:102;
+}
+#nav i{
+    height: 27px;
+    font-size: 2vw;
+    text-decoration: none;
+    opacity: 1;
+    position: absolute;
+    z-index: 99;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#nav #circle{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#nav h4{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#nav h4:nth-child(1){
+    border-bottom: 1.5px solid #fff;
+}
+
+
+
+
+section {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+}
+
+section h1 {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 10vw;
+    text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+}
+
+section:first-of-type {
+    background-image: url(./imgs/about-section1.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+section:nth-of-type(2) {
+    background-image: url(./imgs/about-section2.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+section:last-of-type {
+    background-image: url(./imgs/about-section3.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+#sec-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    background-size: 110%;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.card .abt-content {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 5vw;
+    
+}
+
+.card .abt-content div {
+    width: 40%;
+    height: 80%;
+}
+
+.card .abt-content div h2 {
+    font-size: 4vw;
+    margin-top: 3vh;
+    font-family: "Kode Mono", monospace;
+}
+
+.card .abt-content div p {
+    font-size: 1.3vw;
+    font-family: "Kode Mono", monospace;
+}
+
+
+
+

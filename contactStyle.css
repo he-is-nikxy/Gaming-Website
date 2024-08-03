@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Kode+Mono:wght@400..700&family=Maven+Pro&family=Poiret+One&family=Poppins:wght@100;400&family=Sacramento&family=Titillium+Web&family=Zeyada&display=swap');
+
+
+@font-face {
+    font-family: PP mori;
+    src: url(./ppmori.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PP mori;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #0F0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#nav{
+    height: 55px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index:102;
+}
+#nav i{
+    height: 27px;
+    font-size: 2vw;
+    text-decoration: none;
+    opacity: 1;
+    position: absolute;
+    z-index: 99;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#nav #circle{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#nav h4{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#nav h4:nth-child(1){
+    border-bottom: 1.5px solid #fff;
+}
+
+
+
+.main .contact-content {
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/contact-bg.avif);
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.main .contact-content .contact-div {
+    padding: 5vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.main .contact-content .contact-div h1 {
+    color: black;
+    font-size: 4vw;
+    text-shadow: -2px 1px 7px rgb(255, 255, 255);
+    margin-top: 5vh;
+    font-family: "Kode Mono", monospace;
+}
+.main .contact-content .contact-div p {
+    color: black;
+    font-size: 2vw;
+    text-shadow: -2px 1px 7px rgb(16, 16, 16);
+    margin-top: 2vh;
+    font-family: "Kode Mono", monospace;
+}
+
+.main .contact-content .contact-div button {
+    color: white;
+    background-color: #0F0D0D;
+    border: none;
+    font-size: 2vw;
+    text-shadow: -2px 1px 7px rgb(16, 16, 16);
+    margin-top: 2vh;
+    font-family: "Kode Mono", monospace;
+    cursor: pointer;
+    transition: ease all .5s;
+}
+
+.main .contact-content .contact-div button:hover {
+    background-color: #fff;
+    color: #0F0D0D;
+}
+
